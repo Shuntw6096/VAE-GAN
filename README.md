@@ -15,7 +15,7 @@ VAE的想法是：是否能用一組隨機的code產生一張真實的圖片．�
 簡單來說這是一個衡量兩個分布相似度的方式，其值必大於等於零且不具對稱性．當且僅當P=Q，其值為零．
 ![formula1](https://github.com/Shuntw6096/VAE-GAN/blob/master/img/formula1.PNG)  
 
-# VAE-GAN
+# VAE-GAN Structure
 ![structure](https://github.com/Shuntw6096/VAE-GAN/blob/master/img/structure.PNG)  
 ![encoder_loss](https://github.com/Shuntw6096/VAE-GAN/blob/master/img/encoder_loss.PNG)  
 ![decoder_loss](https://github.com/Shuntw6096/VAE-GAN/blob/master/img/decoder_loss.PNG)  

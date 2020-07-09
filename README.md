@@ -34,7 +34,7 @@ VAE的想法是：是否能用一組隨機的code產生一張真實的圖片．�
 ![discrimintor_loss](https://github.com/Shuntw6096/VAE-GAN/blob/master/img/discrimintor_loss.PNG)  
 
 # Mode Collapse
-當給generator的輸入z產生變化而generator輸出沒有改變，也就是generator只會產生同一種樣本，這時GAN產生Model Collapse．利用**Minibatch discrimination**可以有效解決Model Collapse．所謂Minibatch discrimination是指在給discriminator判斷樣本時，在樣本裡摻有其他樣本的信息，因為discriminator是一個個樣本判斷真偽，而Minibatch discrimination使discriminator組合查看樣本．[4]
+當給generator的輸入z產生變化而generator輸出沒有改變，也就是generator只會產生同一種樣本，這時GAN產生Mode Collapse．利用**Minibatch discrimination**可以有效解決Mode Collapse．所謂Minibatch discrimination是指在給discriminator判斷樣本時，在樣本裡摻有其他樣本的信息，因為discriminator是一個個樣本判斷真偽，而Minibatch discrimination使discriminator組合查看樣本．[4]
 
 # Some Training Tricks used in VAE-GAN-FACE
 1. Flip labels when training generator: real = fake, fake = real
